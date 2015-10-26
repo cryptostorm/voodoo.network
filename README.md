@@ -1,3 +1,48 @@
+# Update
+Current voodoo instances are as follows:
+
+<sup>Note: I'm unsure what the final terminology will be, but this list should be fairly self-explanatory.
+Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.network.wtf and linux.network.wtf respectively (excluding "Saudi Arabia"), but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
+
+<sup>Another note: "entry/core" or "entry/jump" is the thing you would tell your OpenVPN client to connect to.</sup>
+
+Half voodoo (entry/core <=> exit):
+
+	Indonesia:
+	(win) entry/core: 76.164.235.21 (US west), exit: 103.56.207.103 (Indonesia)
+	(nix) entry/core: 76.164.235.22 (US west), exit: 103.56.207.104 (Indonesia)
+
+ 	Iceland:
+	(win) entry/core: 5.154.191.26 (Moldova), exit: 151.236.24.12 (Iceland)
+	(nix) entry/core: 5.154.191.27 (Moldova), exit: 151.236.24.85 (Iceland)
+
+	Isle of Man: 
+	(win) entry/core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of Man)
+	(nix) entry/core: 5.154.191.30 (Moldova), exit: 37.235.55.188 (Isle of Man)
+	
+	Saudi Arabia:
+	Obviously, only use this one for testing purposes, as .gov.sa controls the internet there
+	so everything is filtered/monitored.
+	(win) entry/core: 5.154.191.28 (Moldova), exit: 46.151.215.118 (Saudi Arabia)
+	(nix) no nix IP atm, as it got mysteriously firewalled and hasn't been replaced.
+
+Full voodoo (jump/entry <=> core <=> exit):
+
+	(win) entry/jump: 176.61.137.153 (Sweden), core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of man)
+	(nix) entry/jump: 176.61.137.152 (Sweden), core: 5.154.191.30 (Moldova), exit: 37.235.55.188 (Isle of Man)
+
+Several people have asked me what the point of all this is, if packets have to be routed back to the core before they hit the internet, how does this actually change your "exit" IP?<br>
+The short answer is: GRE tunnels :-D
+
+Because of the GRE tunnel between the core and the exit, it allows the core to basically bind() to the exit's IP<br> (Actually, it's binding to an RFC 1918 [192.168.x.x] IP that acts as the endpoint for both sides of the GRE tunnel).<br>
+The context of the GRE tunnel and the iptables rules mean that your pre-login packets passing through the exit VPS will only come from the core's IP, and once you're logged into the VPN, the only source IPs the exit VPS will ever see are the RFC 1918 [10.x.x.x] ones randomly assigned to you by the OpenVPN server running on the core. So only the core will know your real IP, or in the case of the "Full voodoo" one, only the "entry/jump" node will know your real IP.
+
+To clarify (and hopefully simplify), for "Half voodoo", the entry/core sees where you're coming from but not where you're going, and the exit VPS sees where you're going but not where you're coming from.
+
+And in "Full voodoo", the entry/jump sees where you're coming from, but not where you're going to, the core doesn't see where you're coming from or where you're going, and the exit sees where you're going but not where you're coming from.
+
+Onto the original README...
+
 # Fun with GRE tunnels and some other stuff
 
 We still haven't thought up a decent name for this thing, but our `network.wtf` domain will probably be used.
