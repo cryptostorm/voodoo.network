@@ -9,21 +9,21 @@ Also, the following "Half voodoo" entries are mapped to the DNS pool for windows
 Half voodoo (entry/core <=> exit):
 
 	Indonesia:
-	(win) entry/core: 76.164.235.21 (US west), exit: 103.56.207.103 (Indonesia)
-	(nix) entry/core: 76.164.235.22 (US west), exit: 103.56.207.104 (Indonesia)
+	(win) entry/core: 76.164.235.21 (US west),   exit: 103.56.207.103 (Indonesia)
+	(nix) entry/core: 76.164.235.22 (US west),   exit: 103.56.207.104 (Indonesia)
 
  	Iceland:
-	(win) entry/core: 5.154.191.26 (Moldova), exit: 151.236.24.12 (Iceland)
-	(nix) entry/core: 5.154.191.27 (Moldova), exit: 151.236.24.85 (Iceland)
+	(win) entry/core: 5.154.191.26 (Moldova),    exit: 151.236.24.12 (Iceland)
+	(nix) entry/core: 5.154.191.27 (Moldova),    exit: 151.236.24.85 (Iceland)
 
 	Isle of Man: 
 	(win) entry/core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of Man)
-	(nix) entry/core: 5.154.191.30 (Moldova), exit: 37.235.55.188 (Isle of Man)
+	(nix) entry/core: 5.154.191.30 (Moldova),    exit: 37.235.55.188 (Isle of Man)
 	
 	Saudi Arabia:
 	Obviously, only use this one for testing purposes, as .gov.sa controls the internet there
 	so everything is filtered/monitored.
-	(win) entry/core: 5.154.191.28 (Moldova), exit: 46.151.215.118 (Saudi Arabia)
+	(win) entry/core: 5.154.191.28 (Moldova),    exit: 46.151.215.118 (Saudi Arabia)
 	(nix) no nix IP atm, as it got mysteriously firewalled and hasn't been replaced.
 
 Full voodoo (jump/entry <=> core <=> exit):
