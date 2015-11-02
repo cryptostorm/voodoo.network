@@ -2,7 +2,7 @@
 Current voodoo instances are as follows:
 
 <sup>Note: I'm unsure what the final terminology will be, but this list should be fairly self-explanatory.
-Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.network.wtf and linux.network.wtf respectively (excluding "Saudi Arabia"), but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
+Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.voodoo.network and linux.voodoo.network respectively (excluding "Saudi Arabia"), but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
 
 <sup>Another note: "entry/core" or "entry/jump" is the thing you would tell your OpenVPN client to connect to.</sup>
 
