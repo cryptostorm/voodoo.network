@@ -2,7 +2,7 @@
 Current voodoo instances are as follows:
 
 <sup>Note: I'm unsure what the final terminology will be, but this list should be fairly self-explanatory.
-Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.voodoo.network and linux.voodoo.network respectively (excluding "Saudi Arabia"), but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
+Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.voodoo.network and linux.voodoo.network respectively, but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
 
 <sup>Another note: "entry/core" or "entry/jump" is the thing you would tell your OpenVPN client to connect to.</sup>
 
@@ -20,12 +20,6 @@ Half voodoo (entry/core <=> exit):
 	(win) entry/core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of Man)
 	(nix) entry/core: 5.154.191.30 (Moldova),    exit: 37.235.55.188 (Isle of Man)
 	
-	Saudi Arabia:
-	Obviously, only use this one for testing purposes, as .gov.sa controls the internet there
-	so everything is filtered/monitored.
-	(win) entry/core: 5.154.191.28 (Moldova),    exit: 46.151.215.118 (Saudi Arabia)
-	(nix) no nix IP atm, as it got mysteriously firewalled and hasn't been replaced.
-
 Full voodoo (jump/entry <=> core <=> exit):
 
 	(win) entry/jump: 176.61.137.153 (Sweden), core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of man)
