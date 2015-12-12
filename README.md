@@ -179,11 +179,6 @@ Half voodoo (entry/core <=> exit):
 	(win) entry/core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of Man)
 	(nix) entry/core: 5.154.191.30 (Moldova),    exit: 37.235.55.188 (Isle of Man)
 	
-Full voodoo (jump/entry <=> core <=> exit):
-
-	(win) entry/jump: 176.61.137.153 (Sweden), core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of man)
-	(nix) entry/jump: 176.61.137.152 (Sweden), core: 5.154.191.30 (Moldova),    exit: 37.235.55.188 (Isle of Man)
-
 Several people have asked me what the point of all this is, if packets have to be routed back to the core before they hit the internet, how does this actually change your "exit" IP?<br>
 The short answer is: GRE tunnels :-D
 
