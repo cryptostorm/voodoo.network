@@ -188,5 +188,3 @@ The context of the GRE tunnel and the iptables rules mean that your pre-login pa
 To clarify (and hopefully simplify), for "Half voodoo", the entry/core sees where you're coming from but not where you're going, and the exit VPS sees where you're going but not where you're coming from.
 
 And in "Full voodoo", the entry/jump sees where you're coming from, but not where you're going to, the core doesn't see where you're coming from or where you're going, and the exit sees where you're going but not where you're coming from.
-
-Onto the original README...
