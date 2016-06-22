@@ -162,23 +162,6 @@ Very useful for services like Netflix, Hulu, Youtube, etc. that restrict access 
 Now go [buy access tokens](http://cryptostorm.is/#section5) :-P
 
 # Update
-Current voodoo instances are as follows:
-
-<sup>Note: I'm unsure what the final terminology will be, but this list should be fairly self-explanatory.
-Also, the following "Half voodoo" entries are mapped to the DNS pool for windows.voodoo.network and linux.voodoo.network respectively, but the "Full voodoo" ones are not since I have no clue what the DNS name format will be for that one.</sup>
-
-<sup>Another note: "entry/core" or "entry/jump" is the thing you would tell your OpenVPN client to connect to.</sup>
-
-Half voodoo (entry/core <=> exit):
-
- 	Iceland:
-	(win) entry/core: 5.154.191.26 (Moldova),    exit: 151.236.24.12 (Iceland)
-	(nix) entry/core: 5.154.191.27 (Moldova),    exit: 151.236.24.85 (Iceland)
-
-	Isle of Man: 
-	(win) entry/core: 104.238.194.238 (US west), exit: 37.235.55.73 (Isle of Man)
-	(nix) entry/core: 5.154.191.30 (Moldova),    exit: 37.235.55.188 (Isle of Man)
-	
 Several people have asked me what the point of all this is, if packets have to be routed back to the core before they hit the internet, how does this actually change your "exit" IP?<br>
 The short answer is: GRE tunnels :-D
 
