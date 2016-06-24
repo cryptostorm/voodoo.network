@@ -4,8 +4,6 @@ Widget users can simply select voodoo instances from the drop-down node list the
 
 # Fun with GRE tunnels and some other stuff
 
-We still haven't thought up a decent name for this thing, but our `network.wtf` domain will probably be used.
-
 Basically, this is a way for people to connect to CS and have their outgoing traffic routed through a remote VPS
 server without exposing the client's real IP to that VPS, or risking the OpenVPN server keys, or leaking any DNS to the VPS.
 
