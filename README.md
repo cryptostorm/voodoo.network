@@ -1,3 +1,7 @@
+The latest OpenVPN config files for voodoo can be found at https://github.com/cryptostorm/cryptostorm_client_configuration_files/tree/master/voodoo
+
+Widget users can simply select voodoo instances from the drop-down node list then connect as they would any standard node.
+
 # Fun with GRE tunnels and some other stuff
 
 We still haven't thought up a decent name for this thing, but our `network.wtf` domain will probably be used.
