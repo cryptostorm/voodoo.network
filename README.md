@@ -1,6 +1,11 @@
-The latest OpenVPN config files for voodoo can be found at https://github.com/cryptostorm/cryptostorm_client_configuration_files/tree/master/voodoo
+# VOODOO HAS BEEN DISCONTINUED
 
-Widget users can simply select voodoo instances from the drop-down node list then connect as they would any standard node.
+It was simply too difficult to maintain with the limited manpower and time at our disposal.
+However, we do plan on doing something similar sometime in the future, but using dedicated servers instead of VPSes.
+Something like a multi-hop feature that lets you connect to more than one VPN server at a time.
+
+For historical purposes, here's the original voodoo technical explanation:
+
 
 # Fun with GRE tunnels and some other stuff
 
